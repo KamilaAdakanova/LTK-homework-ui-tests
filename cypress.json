@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://www.shopltk.com/",
+  "video": false,
+  "defaultCommandTimeout": 7000
+}

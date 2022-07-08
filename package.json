@@ -1,0 +1,26 @@
+{
+  "name": "ltk-homework-ui-tests",
+  "version": "1.0.0",
+  "description": "UI Automation tests for signUp a new  LTK web",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "mpe": "npx cypress run --spec 'cypress/integration/*/*.mpe.spec.js'",
+    "smoke": "npx cypress run --spec 'cypress/integration/*/*.smoke.spec.js'",
+    "regression": "npm run mpe && npm run smoke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamilaAdakanova/LTK-homework-ui-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamilaAdakanova/LTK-homework-ui-tests/issues"
+  },
+  "homepage": "https://github.com/KamilaAdakanova/LTK-homework-ui-tests#readme",
+  "dependencies": {
+    "cypress": "^9.6.0"
+  }
+}
