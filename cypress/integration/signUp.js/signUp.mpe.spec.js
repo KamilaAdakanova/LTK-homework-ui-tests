@@ -61,7 +61,7 @@ describe("SingUp Page Elements", () => {
     it("Checking message under email", () => {
       signUp.emailField().type(testEmail).should("have.value", testEmail);
       signUp.messageUnderEmail().first().should("have.text", "Enter a valid email");
-      //signUp.emailField().clear();
+      signUp.emailField().clear();
     });
     it("Checking Password Input Field", () => {
       signUp.passwordField().type("123123zzz").should("have.value", "123123zzz");
@@ -69,16 +69,4 @@ describe("SingUp Page Elements", () => {
       signUp.passwordField().clear();
     });
   });
-  // describe("Checking Messages after enter invalid email and password", () => {
-  //   it("Checking message under email", () => {
-  //     signUp.emailField().type(12a).should("have.value", testEmail);
-  //     signUp.messageUnderEmailField().first().should("be.visible").should("have.text", "Enter a valid email");
-  //     //signUp.emailField().clear();
-  //   });
-  //   it("Checking Password Input Field", () => {
-  //     signUp.passwordField().type("123123zzz").should("have.value", "123123zzz");
-  //     signUp.messageUnderEmailField().second().should("be.visible").should("have.text", "Minimum of 8 characters");
-  //     signUp.passwordField().clear();
-  //   });
-  // });
 });
