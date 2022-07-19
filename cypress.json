@@ -1,5 +1,6 @@
 {
   "baseUrl": "https://www.shopltk.com/",
+  "ignoreTestFiles": ["**/1-getting-started/*", "**/2-advanced-examples/*"],
   "video": false,
   "defaultCommandTimeout": 7000
 }
